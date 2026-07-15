@@ -1,0 +1,85 @@
+<!-- 
+ Student: Hamid Hussain
+Student ID: A00199758
+Subject: UED100 User Experience Design
+Assessment: 2 
+-->
+
+<!-- Core HTML structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Workout Planner</title>
+
+    <!-- Bootstrap 5 CDN for my CSS style-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+crossorigin="anonymous">
+
+    <!-- This will apply logo in corner of the browser -->
+    <link rel="icon" type="image/png" href="images/logo3.png">
+
+    <!-- This stylesheet will link my css file to this html -->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- d-flex makes body flex container and min-vh-100 sets the height of the body 100%. -->
+<body class="d-flex flex-column min-vh-100">
+    <header class="py-0">
+       
+        <!-- div is used to create content layout with bootstrap container class  -->
+           <div class="flex-grow-1 text-center">
+            <!-- To keep the page responsive we use img-fluid class on all devices -->
+            <img src="images/logo6.png" alt="logo" class="img-fluid" style="max-width: 300px">
+           </div>
+    </header>
+
+    <!-- Menu navigation bar using Bootstrap style  -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+        <div class="navbar-nav mx-auto">
+              <a class="nav-link px-md-4" href="index.html">Home</a>
+              <a class="nav-link px-md-4" href="workouts.html">Workouts</a>
+              <a class="nav-link px-md-4" href="about.html">About Us</a>
+        </div>
+    </div>    
+</nav>
+
+<!-- main is for the primary content of the page -->
+ <!-- flex-grow-1 expands the main to fill every pixel to force the footer at the very bottom of the page -->
+<main class="flex-grow-1 text-center py-1">
+          <h3> Welcome to your daily Workout Planner </h3>
+        <p>Stay consistent, Stay strong and Improve your fitness goals
+         to discover the true potential within yourself. </p>
+
+               <!-- d-flex converts the container to flex and justify-content-center to center the image -->
+    <div class="d-flex justify-content-center">
+    <div style="max-width: 150px;">
+        <!-- img-fluid is bootstrap class to make they image responsive -->
+        <img src="images/dumbbell.png" alt="fitness" class="img-fluid"> 
+    </div>
+</div>
+</main>
+
+
+
+
+<!-- Footer for my webpage -->
+<footer>
+    <div class="container">
+          &copy; 2026 Workout Planner, <span style="font-style: italic;">📍South Australia</span> 
+    </div>
+</footer>
+
+<!-- Bootstrap 5 CDN for JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+crossorigin="anonymous"></script>
+
+<!-- script that connects my JavaScript file to this html-->
+<script src="script.js"></script>
+</body>
+</html>

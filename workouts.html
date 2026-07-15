@@ -1,0 +1,233 @@
+<!-- 
+ Student: Hamid Hussain
+Student ID: A00199758
+Subject: UED100 User Experience Design
+Assessment: 2 
+-->
+
+<!-- Core HTML structure -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Workout Planner</title>
+
+      <!-- This will apply logo in corner of the browser -->
+    <link rel="icon" type="image/png" href="images/logo3.png">
+
+    <!-- Bootstrap 5 CDN for my CSS style-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+crossorigin="anonymous">
+
+    <!-- This stylesheet will link my css file to this html -->
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- d-flex makes body flex container and min-vh-100 sets the height of the body 100%. -->
+<body class="d-flex flex-column min-vh-100">
+        <header class="py-0">
+    <div class="container-fluid d-flex align-items-center">
+        <div style="width: 80px;">
+            <img src="images/logo3.png" alt="logo" width="65" height="55">
+        </div>
+
+        <div class="flex-grow-1 text-center">
+            <h1 class="fw-bold display-4 m-0">Workouts</h1>
+        </div>
+        <div style="width: 80px;"></div>
+    </div>
+</header>
+    
+    <!-- Menu navigation bar using Bootstrap style  -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+        <div class="navbar-nav mx-auto">
+              <a class="nav-link px-md-4" href="index.html">Home</a>
+              <a class="nav-link px-md-4" href="workouts.html">Workouts</a>
+              <a class="nav-link px-md-4" href="about.html">About Us</a>
+        </div>
+    </div>    
+</nav>
+
+<!-- main is for the primary content of the page -->
+  <!-- flex-grow-1 expands the main to fill every pixel to force the footer at the very bottom of the page -->
+<main class="flex-grow-1 text-center py-1">
+           <p> You can find all types of Workouts, Learnings, and Fundamentals for
+             your gym sessions to help you accelerate your goals. </p>
+             
+             <!-- add container for responsive spacing on the left and right -->
+        <div class="container">
+        <h2 class="text-center mb-4">Workout Categories</h2>
+        
+        <!-- add container for responsiveness and my-4 for vertical margin on top and bottom -->
+        <div class="container my-4">
+
+            <!-- class-accordion = turn div into accordion to collapsible vertically stacked,
+              mx-auto = centers the margins , 
+              push-accordion = for custom CSS style for controlling width
+              id = unique ID used to link accordion items together-->
+    <div class="accordion mx-auto push-accordion" id="pushAccordion">
+
+        <!-- one accordion item -->
+        <div class="accordion-item">
+            <!-- for accordion header -->
+            <h2 class="accordion-header">
+                <!-- accordion-button = clickable button for accodion 
+                 collapsed = starts the page with closed bar
+                  data-bs-toggle="collapse" = Enables Bootstrap collapse feature
+                    data-bs-target="#collapsePush" = Links button to the content below
+                -->
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsePush">
+                    Day 1: Push (Chest, Shoulders, Triceps)
+                </button>
+            </h2>
+
+            <!-- 
+                Collapsible content
+                id must match data-bs-target above
+                data-bs-parent allows only one accordion to stay open at a time
+            -->
+            <div id="collapsePush"
+                class="accordion-collapse collapse"
+                data-bs-parent="#pushAccordion">
+
+                 <!-- content inside the accordion -->
+                <div class="accordion-body">
+                    <!-- bootstrap list group -->
+                    <ul class="list-group list-group-flush">
+                        <!-- below is list group items -->
+                        <li class="list-group-item"><strong>Barbell Bench Press:</strong> 4 sets x 8-10 reps</li>
+                        <li class="list-group-item"><strong>Overhead Dumbbell Press:</strong> 3 sets x 8-10 reps</li>
+                        <li class="list-group-item"><strong>Incline Dumbbell Press:</strong> 3 sets x 10-12 reps</li>
+                        <li class="list-group-item"><strong>Cable Chest Flyes:</strong> 3 sets x 12-15 reps</li>
+                        <li class="list-group-item"><strong>Dumbbell Lateral Raises:</strong> 4 sets x 12-15 reps</li>
+                        <li class="list-group-item"><strong>Tricep Rope Pushdowns:</strong> 3 sets x 10-12 reps</li>
+                        <li class="list-group-item"><strong>Flat Sven Press:</strong> 3 sets x 10-12 reps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div class="container my-4">
+
+            <!-- class-accordion = turn div into accordion to collapsible vertically stacked,
+              mx-auto = centers the margins , 
+              pull-accordion = for custom CSS style for controlling width
+              id = unique ID used to link accordion items together-->
+    <div class="accordion mx-auto pull-accordion" id="pullAccordion">
+
+        <!-- one accordion item -->
+        <div class="accordion-item">
+            <!-- for accordion header -->
+            <h2 class="accordion-header">
+                <!-- accordion-button = clickable button for accodion 
+                 collapsed = starts the page with closed bar
+                  data-bs-toggle="collapse" = Enables Bootstrap collapse feature
+                    data-bs-target="#collapsePull" = Links button to the content below
+                -->
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsePull">
+                    Day 2: Pull (Back, Biceps, Rear Delts)
+                </button>
+            </h2>
+
+            <!-- 
+                Collapsible content
+                id must match data-bs-target above
+                data-bs-parent allows only one accordion to stay open at a time
+            -->
+            <div id="collapsePull"
+                class="accordion-collapse collapse"
+                data-bs-parent="#pullAccordion">
+
+                 <!-- content inside the accordion -->
+                <div class="accordion-body">
+                    <!-- bootstrap list group -->
+                    <ul class="list-group list-group-flush">
+                        <!-- below is list group items -->
+                        <li class="list-group-item"><strong>Lat Pulldowns:</strong> 3 sets x 8-10 reps</li>
+                        <li class="list-group-item"><strong>Bent-Over Barbell Rows:</strong> 3 sets x 8-10 reps</li>
+                        <li class="list-group-item"><strong>Seated Cable Rows:</strong> 3 sets x 10-12 reps</li>
+                        <li class="list-group-item"><strong>Face Pulls:</strong> 3 sets x 15 reps</li>
+                        <li class="list-group-item"><strong>Barbell Bicep Curls:</strong> 3 sets x 10-12 reps</li>
+                        <li class="list-group-item"><strong>Dumbbell Hammer Curls:</strong> 3 sets x 12-15 reps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+
+            <!-- class-accordion = turn div into accordion to collapsible vertically stacked,
+              mx-auto = centers the margins , 
+              legs-accordion = for custom CSS style for controlling width
+              id = unique ID used to link accordion items together-->
+    <div class="accordion mx-auto legs-accordion" id="legsAccordion">
+
+        <!-- one accordion item -->
+        <div class="accordion-item">
+            <!-- for accordion header -->
+            <h2 class="accordion-header">
+                <!-- accordion-button = clickable button for accodion 
+                 collapsed = starts the page with closed bar
+                  data-bs-toggle="collapse" = Enables Bootstrap collapse feature
+                    data-bs-target="#collapsePull" = Links button to the content below
+                -->
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseLegs">
+                    Day 3: Legs (Quads, Hamstrings, Calves)
+                </button>
+            </h2>
+
+            <!-- 
+                Collapsible content
+                id must match data-bs-target above
+                data-bs-parent allows only one accordion to stay open at a time
+            -->
+            <div id="collapseLegs"
+                class="accordion-collapse collapse"
+                data-bs-parent="#legsAccordion">
+
+                 <!-- content inside the accordion -->
+                <div class="accordion-body">
+                    <!-- bootstrap list group -->
+                    <ul class="list-group list-group-flush">
+                        <!-- below is list group items -->
+                        <li class="list-group-item"><strong>Barbell Back Squats:</strong> 3 sets x 6-8 reps</li>
+                        <li class="list-group-item"><strong>Romanian Deadlifts:</strong> 3 sets x 8-10 reps</li>
+                        <li class="list-group-item"><strong>Leg Press:</strong> 3 sets x 10-12 reps</li>
+                        <li class="list-group-item"><strong>Leg Extension:</strong> 3 sets x 10-12 reps</li>
+                        <li class="list-group-item"><strong>Standing Calf Raises:</strong> 4 sets x 12-15 reps</li>
+                        <li class="list-group-item"><strong>Stiff-Legged Deadlift:</strong> 3 sets x 8-10 reps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer for my webpage -->
+<footer>
+    <div class="container">
+          &copy; 2026 Workout Planner, <span style="font-style: italic;">📍South Australia</span> 
+    </div>
+</footer>
+
+<!-- Bootstrap 5 CDN for JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+crossorigin="anonymous"></script>
+
+<!-- script that connects my JavaScript file to this html-->
+<script src="script.js"></script>
+</body>
+</html>

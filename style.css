@@ -1,0 +1,64 @@
+/* 
+Student: Hamid Hussain
+Student ID: A00199758
+Subject: UED100 User Experience Design
+Assessment: 2 
+*/
+
+
+/* General body of the page */
+body{
+    background-color:#3e4148;
+    color:#ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* Added color and glow to the Headers */
+.fw-bold{
+    color: #f5fd00db;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    text-shadow:0 0 5px #ffffff;
+    font-size: 27px;
+    text-align: center;
+   }
+
+/* Navigation menu spaceing from top line and removed the dots */
+nav ul{
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+
+/* Navigation in one line and spacing */
+nav li{
+    display:inline;
+    margin:0 15px;
+}
+
+/* added space on top of main paragraph */
+main{
+    margin-top: 30px;
+}
+
+/* custom style for the workout accordion, width 95% makes the accordion responsive */
+.pull-accordion, .push-accordion, .legs-accordion{
+    max-width:450px;
+    width:95%;
+    margin:auto;
+}
+
+/* set a color when mouse hover the navigation */
+.navbar-nav .nav-link:hover{
+    color:#f5fd00cc;
+}
+
+/* This will set footer at the bottom of the page */
+footer{
+    font-size: 0.7em;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #3e4148;
+    color:rgb(247, 247, 207);
+}
